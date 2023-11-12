@@ -12,7 +12,7 @@ export const StyledButtonHeader = styled.button`
     color: var(--font-color-1);
     cursor: pointer;
     line-height: 105%;
-    cursor: pointer;
+    transition: transform 0.3s ease;
 `
 
 export const StyledButtonSectionOne = styled.button`
@@ -25,4 +25,12 @@ export const StyledButtonSectionOne = styled.button`
     font-weight: var(--font-weight-3);
     color: var(--font-color-4);
     cursor: pointer;
+    transition: transform 0.3s ease;
+`
+
+export const StyledButtonContainerScale = styled.div`
+    transition: transform 0.3s ease;
+    :hover{
+        transform: perspective(1px) scale(1.0388);
+    }
 `

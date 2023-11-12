@@ -7,6 +7,7 @@ import { SectionTwo } from '@/components/SectionTwo'
 import { GlobalStyle } from '@/styles/globalStyle'
 
 export default function Home() {
+
   return (
     <>
       <GlobalStyle/>

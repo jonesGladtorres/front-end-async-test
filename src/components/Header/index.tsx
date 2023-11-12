@@ -1,11 +1,12 @@
 import Image from "next/image"
 import logo from "../../assets/img/logo.png"
-import { StyledDivLogin, StyledHeader, StyledNav, StyledSpanLogin,  } from "./style"
-import loginIcon from "../../assets/icons/login-icon.svg"
-import { StyledLoginHeader, StyledNavHeader } from "@/styles/typography/header"
-import { StyledButtonHeader } from "@/styles/buttons/style"
+import { StyleLiNavHeader, StyledDivLogin, StyledDivLoginContainer, StyledHeader, StyledNav  } from "./style"
+import { StyledNavHeader } from "@/styles/typography/header"
+import { StyledButtonContainerScale, StyledButtonHeader } from "@/styles/buttons/style"
 import { SpanLanguage } from "./SpanLanguage"
 import { NavSolution } from "./NavSolution"
+import { NavMobile } from "./NavMobile"
+import { HandleLogin } from "./HandleLogin"
 
 
 export const Header = () => {
@@ -15,19 +16,21 @@ export const Header = () => {
             <nav>
                 <StyledNav>
                     <NavSolution />
-                    <li><StyledNavHeader>Preços</StyledNavHeader></li>
-                    <li><StyledNavHeader>Carreiras</StyledNavHeader></li>
-                    <li><StyledNavHeader>Contato</StyledNavHeader></li>
+                    <StyleLiNavHeader><StyledNavHeader>Preços</StyledNavHeader></StyleLiNavHeader>
+                    <StyleLiNavHeader><StyledNavHeader>Carreiras</StyledNavHeader></StyleLiNavHeader>
+                    <StyleLiNavHeader><StyledNavHeader>Contato</StyledNavHeader></StyleLiNavHeader>
                 </StyledNav>
             </nav>
             <StyledDivLogin>
-                <StyledSpanLogin>
-                    <Image src={loginIcon} alt="Icone de perfil para login"/>
-                    <StyledLoginHeader>Entrar</StyledLoginHeader>
-                </StyledSpanLogin>
-                <StyledButtonHeader>Começar Agora</StyledButtonHeader>
+                <StyledDivLoginContainer>
+                    <HandleLogin />
+                </StyledDivLoginContainer>
+                <StyledButtonContainerScale>
+                    <StyledButtonHeader>Começar Agora</StyledButtonHeader>
+                </StyledButtonContainerScale>
                 <SpanLanguage/>
             </StyledDivLogin>
+            <NavMobile />
         </StyledHeader>
     )
 }

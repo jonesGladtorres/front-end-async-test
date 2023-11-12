@@ -26,6 +26,9 @@ export const StyledParagraphSectionTwo = styled.p`
     font-weight: var(--font-weight-1);
     font-size: var(--font-size-2);
     color: var(--font-color-5);
+    @media (max-width: 375px) {
+        font-size: var(--font-size-1);
+    }
 `
 
 export const StyledTitleList = styled.h3`
@@ -38,4 +41,10 @@ export const StyledTitleList = styled.h3`
 export const StyledDivIconsSectionTwo = styled.div`
     width: 19rem;
     margin-top: 5rem;
+    @media (max-width: 1150px) {
+        display: flex;
+        margin-top: 10px;
+        justify-content: flex-end;
+        width: 3rem;
+    }
 `

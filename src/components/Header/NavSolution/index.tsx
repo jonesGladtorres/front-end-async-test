@@ -1,22 +1,29 @@
+"use client"
+
 import { StyledLiService, StyledNavHeader } from "@/styles/typography/header"
 import Image from "next/image"
 import Polygron from "../../../assets/icons/Polygon.svg"
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import { ModalSolution } from "./ModalSolution";
+import { StyledDivLoginContainer } from "../style";
+import { StyledContainerNavSolution } from "./style";
 
 const customStyles = {
     overlay: {
         backgroundColor: 'transparent',
+        position: 'absolute',
+        zIndex: 20
     },
     content: {
-      top: '13%',
-      left: '32%',
+      top: '24%',
+      left: '35%',
       right: 'auto',
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
+      position: 'absolute',
+      borderRadius: '0.375rem',
     },
   };
 
@@ -35,11 +42,13 @@ export const NavSolution = () => {
     }
 
     return (
-        <>
-            <StyledLiService onClick={() => openModal()}>
-                        <StyledNavHeader>Soluções</StyledNavHeader>
-                        <Image src={Polygron} alt="ícone de um Polygron"/>
-            </StyledLiService>
+        <StyledContainerNavSolution>
+            <StyledDivLoginContainer>
+                <StyledLiService onClick={() => openModal()}>
+                            <StyledNavHeader>Soluções</StyledNavHeader>
+                            <Image src={Polygron} alt="ícone de um Polygron"/>
+                </StyledLiService>
+            </StyledDivLoginContainer>
             <Modal
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
@@ -49,6 +58,6 @@ export const NavSolution = () => {
             >
                 <ModalSolution />
             </Modal>
-        </>
+        </StyledContainerNavSolution>
     )
 }

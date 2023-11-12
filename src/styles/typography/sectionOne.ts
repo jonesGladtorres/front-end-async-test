@@ -6,6 +6,16 @@ export const StyledTitleSectionOne = styled.h1`
     font-size: var(--font-size-5);
     color: var(--font-color-1);
     width: 31.25rem;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+    @media (max-width: 450px) {
+        font-size: 39px;
+        text-align: center;
+    }
+    @media (max-width: 392px) {
+        font-size: 35px;
+    }
 `
 
 export const StyledParagraphSectionOne = styled.p`
@@ -16,6 +26,13 @@ export const StyledParagraphSectionOne = styled.p`
     width: 26.25rem;
     line-height: 150%;
     opacity: 0.9;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+    @media (max-width: 450px) {
+        font-size: 14px;
+        text-align: center;
+    }
 `
 
 export const StyledSubTitleSectionOne = styled.h3`
@@ -26,6 +43,10 @@ export const StyledSubTitleSectionOne = styled.h3`
     line-height: 105%;
     letter-spacing: 2.4px;
     opacity: 0.75;
+    @media (max-width: 450px) {
+        font-size: 16px;
+        text-align: center;
+    }
 `
 
 export const StyledHyperLinkSectionOne = styled.span`
@@ -39,4 +60,8 @@ export const StyledDivSubTitle = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+    @media (max-width: 450px) {
+        justify-content: center;
+        width: 100%;
+    }
 `
