@@ -17,7 +17,7 @@ export const Card = ({title, description}: any) => {
             setCurrentTitle(title[language])
             setCurrentDescription(description[language])
         }
-    }, [language])
+    }, [description, language, title])
 
     return (
         <StyledLiSectionTwo>
