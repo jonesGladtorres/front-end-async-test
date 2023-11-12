@@ -8,8 +8,10 @@ import Modal from 'react-modal';
 import { ModalSolution } from "./ModalSolution";
 import { StyledDivLoginContainer } from "../style";
 import { StyledContainerNavSolution } from "./style";
+import { Styles } from "../@types";
 
-const customStyles = {
+
+const customStyles: Styles = {
     overlay: {
         backgroundColor: 'transparent',
         position: 'absolute',

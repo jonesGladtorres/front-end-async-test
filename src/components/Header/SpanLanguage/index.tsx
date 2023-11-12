@@ -9,8 +9,9 @@ import { ModalLanguage } from "./ModalLanguage";
 import { StyledDivLoginContainer } from "../style";
 import { useAtomValue } from "jotai";
 import { languagemAtom } from "@/atoms/Language";
+import { Styles } from "../@types";
 
-const customStyles = {
+const customStyles: Styles = {
     overlay: {
         backgroundColor: 'transparent',
         position: 'absolute',

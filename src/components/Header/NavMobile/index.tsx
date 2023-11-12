@@ -2,9 +2,10 @@ import { StyledButtonNavMobile, StyledContainerLinesButtonMobile, StyledLinesBut
 import React from 'react';
 import Modal from 'react-modal';
 import { ModalNavMobile } from "./ModalNavMobile";
+import { Styles } from "../@types";
 
 
-const customStyles = {
+const customStyles: Styles = {
     overlay: {
         zIndex: 10
     },
