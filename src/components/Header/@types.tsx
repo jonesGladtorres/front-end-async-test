@@ -1,4 +1,4 @@
 export interface Styles {
-    content?: React.CSSProperties | any;
-    overlay?: React.CSSProperties | any;
+    content?: any;
+    overlay?: any;
 }
