@@ -16,7 +16,7 @@ bun dev
 json-server --watch db.json
 ```
 
-Abra [http://localhost:3001](http://localhost:3001) com seu navegador para rodar o servidor localmente.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para rodar o servidor localmente.
 
 
 ## Informações Gerais
