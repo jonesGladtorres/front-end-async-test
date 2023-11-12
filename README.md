@@ -12,8 +12,6 @@ yarn dev
 pnpm dev
 # ou
 bun dev
-# e
-json-server --watch db.json
 ```
 
 Abra [http://localhost:3000](http://localhost:3000) com seu navegador para rodar o servidor localmente.
@@ -33,10 +31,9 @@ Abaixo, deixarei algumas documentações de bibliotecas utilizadas neste projeto
 - [Testing Library](https://testing-library.com/docs/) - Utilizado para realizar testes unitários
 - [React Accordion](https://szhsin.github.io/react-accordion/) - Uso exepcional na criação de "Accordion"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+o Deploy deste projeto contou com uma ajuda externa da [API](https://front-end-async-test-snowy.vercel.app).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Para acessar o projeto [CLIQUE AQUI](https://front-end-async-test-jonesgladtorres.vercel.app).
