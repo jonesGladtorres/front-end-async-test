@@ -6,7 +6,6 @@ import { ModalNavMobile } from "./ModalNavMobile";
 
 const customStyles = {
     overlay: {
-        position: 'fixed',
         zIndex: 10
     },
     content: {
