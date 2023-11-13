@@ -18,10 +18,8 @@ const mockData = {
 test('updates content based on language change', () => {
   const { rerender } = render(<Card title={mockData.title} description={mockData.description} />);
 
-  // Switch language to Portuguese
   rerender(<Card title={mockData.title} description={mockData.description} />);
 
-  // Ensure that card information is updated based on the language change
   const titlePortuguese = screen.getByText(/Título em Português/i);
   expect(titlePortuguese).toBeInTheDocument();
 
