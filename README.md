@@ -14,6 +14,18 @@ pnpm dev
 bun dev
 ```
 
+Para executar os testes use os seguintes comandos:
+
+```bash
+
+# Para fazer todos os testes:
+npm run test
+# Para testar as renderizações:
+npm run test sectionTwo.test.tsx
+# Para testar os modais:
+npm run test header.test.tsx
+```
+
 Abra [http://localhost:3000](http://localhost:3000) com seu navegador para rodar o servidor localmente.
 
 

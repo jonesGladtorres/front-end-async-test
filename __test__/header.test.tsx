@@ -1,12 +1,12 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import { Header } from '@/components/Header/index';
+import { render, screen, fireEvent } from '@testing-library/react'
+import { Header } from '@/components/Header/index'
 
 describe('NavSolution component', () => {
   it('renders "Soluções" link and opens modal when clicked', () => {
-    render(<Header />);
+    render(<Header />)
 
-    const solutionButton = screen.getByText('Soluções');
-    expect(solutionButton).toBeInTheDocument();
+    const solutionButton = screen.getByText('Soluções')
+    expect(solutionButton).toBeInTheDocument()
 
     const modalElement = screen.queryByRole('dialog')
     expect(modalElement).not.toBeInTheDocument()
@@ -19,7 +19,7 @@ describe('NavSolution component', () => {
 
     const modalContent = screen.getByText('SOLUÇÕES PRINCIPAIS')
     expect(modalContent).toBeInTheDocument()
-  });
+  })
 
   it('render "Language" link and opens modal when clicked', () => {
     render(<Header />)
